@@ -1,0 +1,33 @@
+test_factorial (__main__.TestExercice) ... ok
+test_prefixes (__main__.TestExercice) ... FAIL
+test_summation (__main__.TestExercice) ... FAIL
+
+======================================================================
+FAIL: test_prefixes (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 20, in test_prefixes
+    'Mauvaise identification de la parité de la longueur de la chaine'
+AssertionError: Lists differ: ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack'] != ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack', 'Qack']
+
+Second list contains 1 additional elements.
+First extra element 7:
+'Qack'
+
+- ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack']
++ ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack', 'Qack']
+?                                                        ++++++++
+ : Mauvaise identification de la parité de la longueur de la chaine
+
+======================================================================
+FAIL: test_summation (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 38, in test_summation
+    'Retrait du mauvais caractère'
+AssertionError: 23593 != 24133 : Retrait du mauvais caractère
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+FAILED (failures=2)
